@@ -1,0 +1,65 @@
+/* Additional styles for agro.html */
+
+/* Introduction Section */
+.intro {
+    background-color: #e9ecef;
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.intro h2 {
+    color: #004080;
+}
+
+/* Benefits Section */
+.benefits {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.benefit-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    flex: 1 1 calc(33.333% - 2rem); /* Responsive layout with three items per row */
+    margin-bottom: 1rem;
+}
+
+.benefit-item h3 {
+    color: #004080;
+}
+
+/* Call to Action Section */
+.call-to-action {
+    text-align: center;
+    padding: 2rem;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.call-to-action h2 {
+    margin-bottom: 1rem;
+}
+
+.cta-button {
+    background-color: #fff;
+    color: #007bff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e9ecef;
+    color: #007bff;
+}

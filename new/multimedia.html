@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia Resources</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <style>
+        /* Additional styles for multimedia.html */
+        .multimedia-header {
+            background-color: #004080;
+            color: #fff;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .multimedia-header h1 {
+            margin: 0;
+        }
+
+        .multimedia-content {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .multimedia-card {
+            background-color: #f9f9f9;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .multimedia-card h2 {
+            color: #004080;
+            margin-top: 0;
+        }
+
+        .multimedia-card img, .multimedia-card video {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .multimedia-card p {
+            margin-bottom: 1rem;
+        }
+
+        .multimedia-card a {
+            display: inline-block;
+            background-color: #004080;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .multimedia-card a:hover {
+            background-color: #003366;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html"><img src="images/logo.jpg" alt="Logo" class="logo"></a>
+            <p>We for the farmers <br> we for the country</p>
+            <h1>KISAN VIKAS PORTAL</h1>
+            <img src="images/emb.jpeg" alt="Emb" class="emb">
+        </div>
+    </header>
+
+    <nav>
+        <div class="button-container">
+            <a href="index.html" class="button">Home</a>
+            <a href="about.html" class="button">About</a>
+            <a href="contact.html" class="button">Contact</a>
+            <a href="gov.html" class="button">Resources</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="multimedia-header">
+            <h1>Multimedia Resources</h1>
+        </div>
+
+        <div class="multimedia-content">
+            <!-- Card 1: Agroforestry Introduction Video -->
+            <div class="multimedia-card">
+                <h2>Agroforestry Introduction Video</h2>
+                <p>This video provides a comprehensive introduction to agroforestry, explaining its principles, benefits, and applications in sustainable farming.</p>
+                <video controls>
+                    <source src="videos/agroforestry-introduction.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <a href="https://www.example.com/agroforestry-introduction" target="_blank">Watch Video</a>
+            </div>
+
+            <!-- Card 2: Agroforestry Photo Gallery -->
+            <div class="multimedia-card">
+                <h2>Agroforestry Photo Gallery</h2>
+                <p>Explore a collection of high-quality images showcasing different agroforestry systems, practices, and success stories.</p>
+           
+                <a href="https://www.gettyimages.in/photos/agroforestry" target="_blank">View Gallery</a>
+            </div>
+
+            <!-- Card 3: Webinar on Agroforestry Practices -->
+            <div class="multimedia-card">
+                <h2>Webinar on Agroforestry Practices</h2>
+                <p>This recorded webinar features experts discussing various agroforestry practices, their benefits, and real-world applications.</p>
+                <video controls>
+                    <source src="videos/agroforestry-webinar.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <a href="https://www.example.com/agroforestry-webinar" target="_blank">Watch Webinar</a>
+            </div>
+
+            <!-- Card 4: Agroforestry Infographic -->
+            <div class="multimedia-card">
+                <h2>Agroforestry Infographic</h2>
+                <p>This infographic presents key information about agroforestry, including its benefits, types, and implementation strategies in a visually engaging format.</p>
+     
+                <a href="https://www.foreststreesagroforestry.org/infographics/" target="_blank">View Infographic</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Kisan Vikas Portal. All rights reserved.</p>
+    </footer>
+</body>
+</html>

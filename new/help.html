@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helpdesk</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <style>
+        /* Additional styles for helpdesk.html */
+        .helpdesk-header {
+            background-color: #004080;
+            color: #fff;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .helpdesk-header h1 {
+            margin: 0;
+        }
+
+        .helpdesk-content {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .helpdesk-card {
+            background-color: #f9f9f9;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%; /* Ensures cards take full width of their container */
+            max-width: 100%; /* Ensures cards do not exceed container width */
+            text-align: left; /* Aligns text to the left inside the card */
+        }
+
+        .helpdesk-card h2 {
+            color: #004080;
+            margin-top: 0;
+        }
+
+        .helpdesk-card p {
+            margin-bottom: 1rem;
+        }
+
+        .helpdesk-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .helpdesk-form label {
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        .helpdesk-form input, .helpdesk-form textarea {
+            margin-bottom: 1rem;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 100%; /* Ensures input fields take full width of the card */
+        }
+
+        .helpdesk-form button {
+            background-color: #004080;
+            color: #fff;
+            border: none;
+            padding: 0.75rem;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            width: auto; /* Allows button to adjust width based on content */
+        }
+
+        .helpdesk-form button:hover {
+            background-color: #003366;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html"><img src="images/logo.jpg" alt="Logo" class="logo"></a>
+            <p>We for the farmers <br> we for the country</p>
+            <h1>KISAN VIKAS PORTAL</h1>
+            <img src="images/emb.jpeg" alt="Emb" class="emb">
+        </div>
+    </header>
+
+    <nav>
+        <div class="button-container">
+            <a href="index.html" class="button">Home</a>
+            <a href="about.html" class="button">About</a>
+            <a href="contact.html" class="button">Contact</a>
+            <a href="resources.html" class="button">Resources</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="helpdesk-header">
+            <h1>Helpdesk</h1>
+        </div>
+
+        <div class="helpdesk-content">
+            <!-- Submit Help Request -->
+            <div class="helpdesk-card">
+                <h2>Submit a Help Request</h2>
+                <form class="helpdesk-form" action="mailto:support@kisanvikasportal.com" method="post" enctype="text/plain">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+
+                    <button type="submit">Submit Request</button>
+                </form>
+            </div>
+
+            <!-- FAQs -->
+            <div class="helpdesk-card">
+                <h2>Frequently Asked Questions</h2>
+                <p><strong>Q1:</strong> How can I reset my password?</p>
+                <p>A1: To reset your password, go to the login page and click on "Forgot Password." Follow the instructions sent to your email.</p>
+                
+                <p><strong>Q2:</strong> How do I update my contact information?</p>
+                <p>A2: You can update your contact information by logging into your account and navigating to the "Profile" section.</p>
+                
+                <p><strong>Q3:</strong> What should I do if I encounter a technical issue?</p>
+                <p>A3: If you encounter a technical issue, please submit a help request using the form above or contact our support team directly.</p>
+                
+                <p><strong>Q4:</strong> Where can I find information about upcoming events?</p>
+                <p>A4: Information about upcoming events can be found in the "Events" section of our website or by contacting us directly.</p>
+                
+                <p><strong>Q5:</strong> How can I provide feedback on your services?</p>
+                <p>A5: You can provide feedback by filling out the feedback form available in the "Feedback" section of our website or by sending us an email.</p>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="helpdesk-card">
+                <h2>Contact Support</h2>
+                <p>If you need immediate assistance, you can contact our support team using the following methods:</p>
+                <p><strong>Phone:</strong> +91 7995974503</p>
+                <p><strong>Email:</strong> <a href="mailto:support@kisanvikasportal.com">support@kisanvikasportal.com</a></p>
+                <p><strong>Office Hours:</strong> Monday - Friday, 9 AM - 5 PM (EST)</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Kisan Vikas Portal. All rights reserved.</p>
+    </footer>
+</body>
+</html>
